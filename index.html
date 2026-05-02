@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Maria Aguilera — Abstract Artist | The People's Artist 2026</title>
+<meta name="description" content="Original abstract works by Maria Aguilera in acrylic, watercolor, oil pastel, crayon, and black ink. Competitor in The People's Artist 2026, presented by Johnny Depp. Vote daily — it's free." />
+
+<!-- Open Graph (controls how the link looks when texted/shared) -->
+<meta property="og:title" content="Vote for Maria Aguilera — The People's Artist 2026" />
+<meta property="og:description" content="Help Maria win The People's Artist competition. Vote daily — it takes 10 seconds and it's free." />
+<meta property="og:image" content="images/share-card.jpg" />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-warm: #f7f7f7;      /* subtle gray for section separation */
+    --ink: #111111;
+    --ink-soft: #6b6b6b;
+    --accent: #111111;       /* charcoal — neutral so paintings dominate */
+    --accent-deep: #000000;
+    --rule: #ececec;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, .serif {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { color: var(--accent-deep); text-decoration: underline; }
+  img { max-width: 100%; display: block; }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    text-align: center;
+    padding: 80px 24px 48px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .badge {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 24px;
+    font-weight: 600;
+  }
+  .hero h1 {
+    font-size: clamp(48px, 8vw, 96px);
+    line-height: 1.05;
+    margin-bottom: 16px;
+  }
+  .hero .tagline {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: clamp(20px, 2.5vw, 28px);
+    color: var(--ink-soft);
+    margin-bottom: 40px;
+  }
+
+  /* ---------- VOTE CTA ---------- */
+  .vote-cta {
+    background: var(--bg-warm);
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 56px 24px;
+    text-align: center;
+  }
+  .vote-cta h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    margin-bottom: 12px;
+  }
+  .vote-cta p {
+    color: var(--ink-soft);
+    max-width: 580px;
+    margin: 0 auto 28px;
+  }
+  .btn-vote {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    padding: 20px 48px;
+    border-radius: 2px;
+    transition: all 0.2s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  }
+  .btn-vote:hover {
+    background: var(--accent-deep);
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.28);
+  }
+  .vote-meta {
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+  .countdown {
+    margin-top: 12px;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 18px;
+    color: var(--accent);
+  }
+
+  /* ---------- SHARE ROW ---------- */
+  .share-row {
+    text-align: center;
+    padding: 32px 24px 0;
+  }
+  .share-row .label {
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 12px;
+  }
+  .share-buttons {
+    display: inline-flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .share-buttons a {
+    display: inline-block;
+    padding: 10px 18px;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    color: var(--ink);
+    font-size: 14px;
+    background: #fff;
+    transition: all 0.15s;
+  }
+  .share-buttons a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  /* ---------- SECTIONS ---------- */
+  section.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 24px;
+  }
+  .section-title {
+    font-size: clamp(32px, 4vw, 44px);
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .section-sub {
+    text-align: center;
+    color: var(--ink-soft);
+    font-style: italic;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 20px;
+    margin-bottom: 56px;
+  }
+
+  /* ---------- GALLERY ---------- */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  .piece {
+    background: #fff;
+    padding: 16px 16px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .piece:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  }
+  .piece-image {
+    aspect-ratio: 4 / 5;
+    background: var(--bg-warm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ink-soft);
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    overflow: hidden;
+  }
+  .piece-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .piece-meta {
+    padding-top: 14px;
+  }
+  .piece-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    margin-bottom: 4px;
+  }
+  .piece-detail {
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+
+  /* ---------- ABOUT ---------- */
+  .about {
+    background: var(--bg-warm);
+  }
+  .about-inner {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 56px;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  @media (max-width: 720px) {
+    .about-inner { grid-template-columns: 1fr; gap: 32px; }
+  }
+  .headshot {
+    aspect-ratio: 1 / 1;
+    background: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    max-width: 360px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ink-soft);
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  }
+  .headshot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .about-text h2 {
+    font-size: clamp(32px, 4vw, 44px);
+    margin-bottom: 24px;
+  }
+  .about-text p {
+    margin-bottom: 18px;
+    color: var(--ink-soft);
+    font-size: 18px;
+  }
+  .about-text p:first-of-type::first-letter {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 64px;
+    float: left;
+    line-height: 1;
+    margin: 6px 10px 0 0;
+    color: var(--accent);
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer {
+    background: var(--ink);
+    color: var(--bg);
+    padding: 64px 24px 32px;
+    text-align: center;
+  }
+  footer h2 {
+    color: #fff;
+    font-size: clamp(28px, 3.5vw, 40px);
+    margin-bottom: 16px;
+  }
+  footer p { color: rgba(250, 247, 242, 0.7); margin-bottom: 28px; }
+  footer .btn-vote { background: #fff; color: var(--accent-deep); box-shadow: none; }
+  footer .btn-vote:hover { background: var(--bg-warm); color: var(--accent-deep); }
+  footer .copyright {
+    margin-top: 48px;
+    font-size: 13px;
+    color: rgba(250, 247, 242, 0.45);
+  }
+  footer a { color: rgba(250, 247, 242, 0.85); }
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="badge">Finalist · The People's Artist 2026</div>
+  <h1>Maria Aguilera</h1>
+  <p class="tagline">Abstract Artist · Mixed Media · Longview, Texas</p>
+</section>
+
+<!-- ============ VOTE CTA ============ -->
+<section class="vote-cta">
+  <h2>Vote daily. It's free.</h2>
+  <p>The People's Artist competition is decided entirely by public vote. You can vote once a day, every day, all the way through August 6. Two minutes of your time could send Maria to a Los Angeles gallery.</p>
+  <a href="https://peoplesartist.org/2026/maria-aguilera" class="btn-vote" id="voteBtn" target="_blank" rel="noopener">VOTE FOR Maria →</a>
+  <div class="vote-meta">Takes about 10 seconds · No donation required</div>
+  <div class="countdown" id="countdown"></div>
+
+  <div class="share-row">
+    <div class="label">Tell a friend</div>
+    <div class="share-buttons">
+      <a href="sms:?&body=Help my friend Maria win The People's Artist! Vote daily (free, 10 sec): https://peoplesartist.org/2026/maria-aguilera" id="shareSms">Text</a>
+      <a href="mailto:?subject=Vote for Maria — The People's Artist&body=Hi! My friend Maria is a finalist in The People's Artist competition (presented by Johnny Depp). Voting is free and takes 10 seconds — and you can vote once a day. Here's the link: https://peoplesartist.org/2026/maria-aguilera" id="shareEmail">Email</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://chalistra.com" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://twitter.com/intent/tweet?text=Vote%20daily%20for%20Maria%20Aguilera%20in%20The%20People%27s%20Artist!%20Free%2C%2010%20seconds&url=https://chalistra.com" target="_blank" rel="noopener">X / Twitter</a>
+      <a href="#" id="copyLink">Copy link</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="content" id="work">
+  <h2 class="section-title">Selected Works</h2>
+  <p class="section-sub">A small window into a larger conversation</p>
+
+  <div class="gallery">
+    <!-- Repeat one .piece block per painting. Drop image files into /images/ and update src + titles. -->
+    <div class="piece">
+      <div class="piece-image"><img src="images/painting-1.jpg" alt="[Title of painting 1]" onerror="this.style.display='none'; this.parentElement.textContent='Painting 1';" /></div>
+      <div class="piece-meta">
+        <div class="piece-title">Untitled I</div>
+        <div class="piece-detail">Acrylic on canvas · 2024</div>
+      </div>
+    </div>
+    <div class="piece">
+      <div class="piece-image"><img src="images/painting-2.jpg" alt="[Title of painting 2]" onerror="this.style.display='none'; this.parentElement.textContent='Painting 2';" /></div>
+      <div class="piece-meta">
+        <div class="piece-title">Untitled II</div>
+        <div class="piece-detail">Watercolor on paper · 2024</div>
+      </div>
+    </div>
+    <div class="piece">
+      <div class="piece-image"><img src="images/painting-3.jpg" alt="[Title of painting 3]" onerror="this.style.display='none'; this.parentElement.textContent='Painting 3';" /></div>
+      <div class="piece-meta">
+        <div class="piece-title">Untitled III</div>
+        <div class="piece-detail">Oil pastel & ink · 2024</div>
+      </div>
+    </div>
+    <div class="piece">
+      <div class="piece-image"><img src="images/painting-4.jpg" alt="[Title of painting 4]" onerror="this.style.display='none'; this.parentElement.textContent='Painting 4';" /></div>
+      <div class="piece-meta">
+        <div class="piece-title">Untitled IV</div>
+        <div class="piece-detail">Acrylic & black ink · 2025</div>
+      </div>
+    </div>
+    <div class="piece">
+      <div class="piece-image"><img src="images/painting-5.jpg" alt="[Title of painting 5]" onerror="this.style.display='none'; this.parentElement.textContent='Painting 5';" /></div>
+      <div class="piece-meta">
+        <div class="piece-title">Untitled V</div>
+        <div class="piece-detail">Crayon & watercolor · 2024</div>
+      </div>
+    </div>
+    <div class="piece">
+      <div class="piece-image"><img src="images/painting-6.jpg" alt="[Title of painting 6]" onerror="this.style.display='none'; this.parentElement.textContent='Painting 6';" /></div>
+      <div class="piece-meta">
+        <div class="piece-title">Untitled VI</div>
+        <div class="piece-detail">Mixed media · 2023</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about">
+  <div class="about-inner content" style="padding-top:0; padding-bottom:0;">
+    <div class="headshot">
+      <img src="images/headshot.jpg" alt="Maria Aguilera in her studio" onerror="this.style.display='none'; this.parentElement.textContent='Headshot';" />
+    </div>
+    <div class="about-text">
+      <h2>About the Artist</h2>
+      <p>For twenty years, in the spaces between raising her family and helping with her grandchildren, Maria Aguilera has been making art at home in Longview, Texas. The work fits into the moments life leaves open — early mornings, quiet afternoons, the still hours before bed.</p>
+      <p>She paints abstractly, building each piece from color and shape rather than subject. Her materials shift with the work: acrylics for layered ground, watercolor for translucence, oil pastels for texture, crayon and black ink for line. Every piece is an attempt to express feeling directly, without translation.</p>
+      <p>Maria's work is aimed at the subconscious — the part of the viewer that responds before the words show up. She wants to draw out the imagination, to reach the inner thoughts of art lovers, and most of all, to touch people's hearts. She is now a competitor in The People's Artist 2026, and every vote brings her closer to a Los Angeles showcase and a wider audience for the work.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER CTA ============ -->
+<footer>
+  <h2>One more vote could change everything.</h2>
+  <p>Free. Daily. Ten seconds.</p>
+  <a href="https://peoplesartist.org/2026/maria-aguilera" class="btn-vote" target="_blank" rel="noopener">VOTE FOR Maria →</a>
+  <div class="copyright">
+    © 2026 Maria Aguilera. All artwork copyright the artist.<br>
+    Contact: <a href="mailto:[EMAIL]">[EMAIL]</a>
+  </div>
+</footer>
+
+<script>
+  // Live countdown to voting close (Aug 6, 2026, midnight PT)
+  (function() {
+    const target = new Date('2026-08-06T23:59:00-07:00').getTime();
+    const el = document.getElementById('countdown');
+    function tick() {
+      const now = Date.now();
+      const diff = target - now;
+      if (diff <= 0) { el.textContent = 'Voting has closed.'; return; }
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      el.textContent = `${days} days, ${hours} hours until voting closes`;
+    }
+    tick();
+    setInterval(tick, 60000);
+  })();
+
+  // Copy-link button
+  document.getElementById('copyLink').addEventListener('click', function(e) {
+    e.preventDefault();
+    navigator.clipboard.writeText(window.location.href).then(() => {
+      this.textContent = 'Copied!';
+      setTimeout(() => { this.textContent = 'Copy link'; }, 2000);
+    });
+  });
+</script>
+
+</body>
+</html>
+                      

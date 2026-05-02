@@ -1,0 +1,33 @@
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+.Spotlight-V100
+.Trashes
+
+# Editor cruft
+.vscode/
+.idea/
+*.swp
+*.swo
+.cursor/
+
+# Local dev
+.env
+.env.local
+node_modules/
+
+# Netlify local
+.netlify/
+
+# Image working files (keep optimized JPGs in images/, ignore originals)
+images/raw/
+images/originals/
+*.psd
+*.tiff
+*.tif
+*.RAF
+*.NEF
+*.CR2
+*.ARW
