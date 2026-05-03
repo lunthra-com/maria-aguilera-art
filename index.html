@@ -271,17 +271,13 @@
     position: relative;
   }
   .headshot {
-    aspect-ratio: 4/5;
-    background: linear-gradient(180deg, #d4c0a8 0%, #6e5a44 100%);
+    aspect-ratio: 1/1;
+    background: var(--bg-soft);
     overflow: hidden;
     position: relative;
-  }
-  .headshot::after {
-    content: 'Headshot';
-    position: absolute; inset: 0;
-    display: flex; align-items: center; justify-content: center;
-    font-family: 'Cormorant Garamond', serif; font-style: italic;
-    color: rgba(255,255,255,0.6); font-size: 22px;
+    max-width: 320px;
+    margin: 0 auto;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
   }
   .headshot-credit {
     margin-top: 12px;
@@ -455,14 +451,14 @@
     <!-- Row 1 -->
     <div class="works-row two-up">
       <div class="work">
-        <div class="work-image"><img src="images/painting-1.jpg" alt="Untitled I — Maria Aguilera" loading="lazy" /></div>
+        <div class="work-image"><img src="images/painting-1.jpg?v=1" alt="Untitled I — Maria Aguilera" loading="lazy" /></div>
         <div class="work-meta">
           <div class="work-title">Untitled I</div>
           <div class="work-detail">Black Ink on Paper · 2025</div>
         </div>
       </div>
       <div class="work">
-        <div class="work-image"><img src="images/painting-2.jpg" alt="Untitled II — Maria Aguilera" loading="lazy" /></div>
+        <div class="work-image"><img src="images/painting-2.jpg?v=1" alt="Untitled II — Maria Aguilera" loading="lazy" /></div>
         <div class="work-meta">
           <div class="work-title">Untitled II</div>
           <div class="work-detail">Black Ink on Paper · 2025</div>
@@ -473,14 +469,14 @@
     <!-- Row 2 -->
     <div class="works-row feature-right">
       <div class="work">
-        <div class="work-image"><img src="images/painting-3.jpg" alt="Untitled III — Maria Aguilera" loading="lazy" /></div>
+        <div class="work-image"><img src="images/painting-3.jpg?v=1" alt="Untitled III — Maria Aguilera" loading="lazy" /></div>
         <div class="work-meta">
           <div class="work-title">Untitled III</div>
           <div class="work-detail">Black Ink on Paper · 2025</div>
         </div>
       </div>
       <div class="work">
-        <div class="work-image"><img src="images/painting-4.jpg" alt="Untitled IV — Maria Aguilera" loading="lazy" /></div>
+        <div class="work-image"><img src="images/painting-4.jpg?v=1" alt="Untitled IV — Maria Aguilera" loading="lazy" /></div>
         <div class="work-meta">
           <div class="work-title">Untitled IV</div>
           <div class="work-detail">Black Ink on Paper · 2025</div>
@@ -490,7 +486,7 @@
   </div>
 
   <!-- Full-bleed feature: painting V -->
-  <div class="bleed" style="background: url('images/painting-5.jpg') center/cover no-repeat;">
+  <div class="bleed" style="background: url('images/painting-5.jpg?v=1') center/cover no-repeat;">
     <div class="bleed-caption">
       <div class="work-title serif ital">Untitled V</div>
       <div class="work-detail">Black Ink on Paper · 2025</div>
@@ -501,14 +497,14 @@
     <!-- Row 3 -->
     <div class="works-row feature-left">
       <div class="work">
-        <div class="work-image"><img src="images/painting-6.jpg" alt="Untitled VI — Maria Aguilera" loading="lazy" /></div>
+        <div class="work-image"><img src="images/painting-6.jpg?v=1" alt="Untitled VI — Maria Aguilera" loading="lazy" /></div>
         <div class="work-meta">
           <div class="work-title">Untitled VI</div>
           <div class="work-detail">Black Ink on Paper · 2025</div>
         </div>
       </div>
       <div class="work">
-        <div class="work-image"><img src="images/painting-7.jpg" alt="Untitled VII — Maria Aguilera" loading="lazy" /></div>
+        <div class="work-image"><img src="images/painting-7.jpg?v=1" alt="Untitled VII — Maria Aguilera" loading="lazy" /></div>
         <div class="work-meta">
           <div class="work-title">Untitled VII</div>
           <div class="work-detail">Black Ink on Paper · 2025</div>
@@ -519,14 +515,14 @@
     <!-- Row 4 -->
     <div class="works-row two-up">
       <div class="work">
-        <div class="work-image"><img src="images/painting-8.jpg" alt="Untitled VIII — Maria Aguilera" loading="lazy" /></div>
+        <div class="work-image"><img src="images/painting-8.jpg?v=1" alt="Untitled VIII — Maria Aguilera" loading="lazy" /></div>
         <div class="work-meta">
           <div class="work-title">Untitled VIII</div>
           <div class="work-detail">Black Ink on Paper · 2025</div>
         </div>
       </div>
       <div class="work">
-        <div class="work-image"><img src="images/painting-9.jpg" alt="Untitled IX — Maria Aguilera" loading="lazy" /></div>
+        <div class="work-image"><img src="images/painting-9.jpg?v=1" alt="Untitled IX — Maria Aguilera" loading="lazy" /></div>
         <div class="work-meta">
           <div class="work-title">Untitled IX</div>
           <div class="work-detail">Black Ink on Paper · 2025</div>
@@ -538,7 +534,7 @@
     <div class="works-row" style="grid-template-columns: 1fr 1.6fr 1fr;">
       <div></div>
       <div class="work">
-        <div class="work-image"><img src="images/painting-10.jpg" alt="Untitled X — Maria Aguilera" loading="lazy" /></div>
+        <div class="work-image"><img src="images/painting-10.jpg?v=1" alt="Untitled X — Maria Aguilera" loading="lazy" /></div>
         <div class="work-meta">
           <div class="work-title">Untitled X</div>
           <div class="work-detail">Black Ink on Paper · 2025</div>
@@ -558,8 +554,8 @@
   </div>
   <div class="about-grid">
     <div class="headshot-wrap">
-      <div class="headshot"></div>
-      <div class="headshot-credit">In the studio · Longview, TX</div>
+      <div class="headshot"><img src="images/headshot.jpg?v=1" alt="Maria Aguilera" /></div>
+      <div class="headshot-credit">Maria Aguilera · Longview, TX</div>
     </div>
     <div class="about-text">
       <h3>For twenty years, the work has been made <em>between the rest of life</em>.</h3>
@@ -603,4 +599,9 @@
     <span class="section-rule"></span>
   </div>
   <div class="contact-grid">
-    <h3>For acquisition, commissions, exhibitions, or <em>an
+    <h3>For acquisition, commissions, exhibitions, or <em>anything else</em>.</h3>
+    <div class="contact-info">
+      <dl>
+        <div>
+          <dt>Email</dt>
+          <dd><a href="mailto:mariaaguileraart@yaho
