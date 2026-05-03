@@ -13,15 +13,6 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
-
-# Long cache for static images (they rarely change once uploaded)
-[[headers]]
-  for = "/images/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-# Don't cache HTML — so updates show up immediately on next visit
-[[headers]]
-  for = "/*.html"
-  [headers.values]
-    Cache-Control = "public, max-age=0, must-revalidate"
+    # Content Security Policy — defense in depth against XSS / supply-chain attacks.
+    # Only the Google Fonts CDN is allowed for fonts/styles; everything else must be self-hosted.
+    Content-Security-Policy = "default-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.
