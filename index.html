@@ -604,4 +604,45 @@
       <dl>
         <div>
           <dt>Email</dt>
-          <dd><a href="mailto:mariaaguileraart@yaho
+          <dd><a href="mailto:mariaaguileraart@yahoo.com">mariaaguileraart@yahoo.com</a></dd>
+        </div>
+        <div>
+          <dt>Phone / Text</dt>
+          <dd><a href="tel:+19039312387">903-931-2387</a></dd>
+        </div>
+        <div>
+          <dt>Instagram</dt>
+          <dd><a href="https://www.instagram.com/maguilera_art" target="_blank" rel="noopener">@maguilera_art</a></dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+  <footer>
+    <div>© 2026 Maria Aguilera. All artwork copyright the artist.</div>
+    <div>chalistra.com · Studio: Longview, Texas</div>
+  </footer>
+</section>
+
+<script>
+  // Sticky nav border on scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  // Live countdown
+  (function() {
+    const target = new Date('2026-08-06T23:59:00-07:00').getTime();
+    const el = document.getElementById('countdown');
+    function tick() {
+      const diff = target - Date.now();
+      if (diff <= 0) { el.textContent = 'Voting has closed.'; return; }
+      const days = Math.floor(diff / 86400000);
+      const hours = Math.floor((diff % 86400000) / 3600000);
+      el.textContent = `${days} days, ${hours} hours until voting closes`;
+    }
+    tick(); setInterval(tick, 60000);
+  })();
+</script>
+</body>
+</html>
